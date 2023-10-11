@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Find All Of The Matching Animals" Height="450" Width="400">
+        Title="Find All Of The Matching Animals" Height="450" Width="400" Background="#FF00FFF9">
     <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-     
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,28 +21,51 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="Red"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF0027FF"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FFE6FF00"/>
+        <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="White"/>
 
-        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF19DA09"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF00B3FF"/>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF078225"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FFE600FF"/>
         <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF6C67FF"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FFFF9800"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF6500FF"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FFDA5F5F"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF8E2828"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FFA2BB12"/>
+        <TextBlock Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown" Foreground="#FF085361"/>
 
-        <TextBlock x:Name="timeTextBlock" Text="Elasped time" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="4"/>
+        <TextBlock x:Name="timeTextBlock" Text="Elasped time" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="4" Foreground="#FFB675BD"/>
+
+        <Image Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+
+
+        <Image Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+
+
+        <Image Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+
+
+        <Image Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
+        <Image Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/clipart-explosion-war-10-2432821794.png" Visibility="Hidden"/>
 
 
 
